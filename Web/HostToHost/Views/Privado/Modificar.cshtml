@@ -1,0 +1,46 @@
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cambiar Clave</title>
+    <script src="/Escrituras/Privado/Modificar.js"></script>
+</head>
+<body>
+    <h2>Cambiar Clave</h2>
+    <form>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">account_box</i><label for="txtUsuario">Usuario:</label>
+                <input type="text" id="txtUsuario" class="form-control" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <label id="lblClave1" class="notificacion">*</label><i class="material-icons">https</i><label for="txtClave1">Clave Actual:</label>
+                <input type="password" id="txtClave1" class="form-control progreso" maxlength="20" placeholder="Clave Actual" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <label id="lblClave2" class="notificacion">*</label><i class="material-icons">https</i><label for="txtClave2">Clave Nueva:</label>
+                <input type="password" id="txtClave2" class="form-control progreso" maxlength="20" placeholder="Clave Nueva" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <label id="lblClave3" class="notificacion">*</label><i class="material-icons">https</i><label for="txtClave3">Confirme Clave:</label>
+                <input type="password" id="txtClave3" class="form-control progreso" maxlength="20" placeholder="Confirmar Clave" />
+            </div>
+        </div>
+        <button id="btnModificar" type="button" class="btn btn-outline-primary">Cambiar Clave</button>
+        <a href="/Privado/Inicio" class="btn btn-outline-secondary">Cancelar</a>
+    </form>
+    @await Html.PartialAsync("_Progreso")
+</body>
+</html>

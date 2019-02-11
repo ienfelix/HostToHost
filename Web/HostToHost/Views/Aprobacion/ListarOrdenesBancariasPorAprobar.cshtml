@@ -1,0 +1,19 @@
+
+@{
+    Layout = "/Views/Shared/_LayoutSideBar.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Órdenes Bancarias Por Aprobar</title>
+    <script src="/Escrituras/Aprobacion/ListarOrdenesBancariasPorAprobar.js"></script>
+</head>
+<body>
+    <h2>Lista Órdenes Bancarias Por Aprobar</h2>
+    @await Html.PartialAsync("_BandejaOrdenBancaria")
+    @await Html.PartialAsync("_PaginadoOrdenBancaria")
+</body>
+</html>

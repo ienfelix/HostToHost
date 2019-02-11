@@ -1,0 +1,56 @@
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editar Usuario</title>
+    <script src="/Escrituras/Cuenta/Editar.js"></script>
+</head>
+<body>
+    <h2>Editar Usuario</h2>
+    <form>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">dns</i><label for="txtIdUsuario">Id Usuario:</label>
+                <input type="text" id="txtIdUsuario" class="form-control" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <label id="lblApePaterno" class="notificacion">*</label><i class="material-icons">person</i><label for="txtApePaterno">Apellido Paterno:</label>
+                <input type="text" id="txtApePaterno" class="form-control progreso" maxlength="50" placeholder="Ingrese Apellido Paterno" />
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <label id="lblApeMaterno" class="notificacion">*</label><i class="material-icons">person</i><label for="txtApeMaterno">Apellido Materno:</label>
+                <input type="text" id="txtApeMaterno" class="form-control progreso" maxlength="50" placeholder="Ingrese Apellido Materno" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <label id="lblNombres" class="notificacion">*</label><i class="material-icons">person</i><label for="txtNombres">Nombres:</label>
+                <input type="text" id="txtNombres" class="form-control progreso" maxlength="50" placeholder="Ingrese Nombre(s)" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-10 col-md-10 col-lg-8 form-group">
+                <label id="lblCorreo" class="notificacion">*</label><i class="material-icons">mail</i><label for="txtCorreo">Correo:</label>
+                <input type="text" id="txtCorreo" class="form-control progreso" maxlength="50" placeholder="Ingresar Correo" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <label id="lblCelular" class="notificacion">*</label><i class="material-icons">smartphone</i><label for="txtCelular">Celular:</label>
+                <input type="text" id="txtCelular" class="form-control progreso" maxlength="15" placeholder="Ingresar Celular" />
+            </div>
+        </div>
+        <button id="btnEditar" type="button" class="btn btn-outline-primary">Guardar</button>
+        <a href="/Cuenta/Listar" class="btn btn-outline-secondary">Cancelar</a>
+    </form>
+    @await Html.PartialAsync("_Progreso")
+</body>
+</html>

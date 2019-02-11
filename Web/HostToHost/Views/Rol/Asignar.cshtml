@@ -1,0 +1,42 @@
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Asignar Rol</title>
+    <script src="/Escrituras/Rol/Asignar.js"></script>
+</head>
+<body>
+    <h2>Asignar Rol</h2>
+    <form>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">dns</i><label for="txtIdUsuario">Id Usuario:</label>
+                <input type="text" id="txtIdUsuario" class="form-control" readonly />
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">account_box</i><label for="txtUsuario">Usuario:</label>
+                <input type="text" id="txtUsuario" class="form-control" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-12 col-sm-5 col-md-5 col-lg-4">
+                <label id="lblRol" class="notificacion">*</label><i class="material-icons">assignment</i><label for="slRol">Rol Deseado:</label>
+                <select id="slRol" class="form-control asignarRol progreso" multiple></select>
+            </div>
+            <div class="form-group col-12 col-sm-5 col-md-5 col-lg-4">
+                <label for="dvRol">Role(s) Asignado(s):</label>
+                <div id="dvRol" class="asignarRol"></div>
+            </div>
+        </div>
+        <button id="btnAsignar" type="button" class="btn btn-outline-primary">Asignar</button>
+        <a href="/Rol/Listar" class="btn btn-outline-secondary">Cancelar</a>
+    </form>
+    @await Html.PartialAsync("_Progreso")
+</body>
+</html>

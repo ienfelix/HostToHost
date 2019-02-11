@@ -1,0 +1,21 @@
+
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-ob-tab" data-toggle="tab" href="#navOrdenBancaria" role="tab" aria-controls="navOrdenBancaria" aria-selected="true">Orden Bancaria</a>
+        <a class="nav-item nav-link" id="nav-obd-tab" data-toggle="tab" href="#navOrdenBancariaDesglose" role="tab" aria-controls="navOrdenBancariaDesglose" aria-selected="false">Desglose Pagos</a>
+        <a class="nav-item nav-link" id="nav-fa-tab" data-toggle="tab" href="#navFlujoAprobacion" role="tab" aria-controls="navFlujoAprobacion" aria-selected="false">Flujo Aprobación</a>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="navOrdenBancaria" role="tabpanel" aria-labelledby="nav-ob-tab">
+        <div id="dvOrdenBancaria"></div>
+        <div id="dvOrdenBancariaDetalle"></div>
+        <div id="dvAccionesOrdenBancaria"></div>
+    </div>
+    <div class="tab-pane fade" id="navOrdenBancariaDesglose" role="tabpanel" aria-labelledby="nav-obd-tab">
+        <div id="dvOrdenBancariaDesglose" class="table-responsive mt-1 ordenesBancarias"></div>
+    </div>
+    <div class="tab-pane fade" id="navFlujoAprobacion" role="tabpanel" aria-labelledby="nav-fp-tab">
+        <div id="dvFlujoAprobacion" class="table-responsive mt-1 ordenesBancarias"></div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html class="h-100">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="/Estilos/site.css" />
+    <link rel="stylesheet" href="/Librerias/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="/Librerias/MaterialIcons/css/materialIcons.css" />
+    <link rel="stylesheet" href="/Librerias/SweetAlert/css/sweetAlert2.css" />
+    <script src="/Librerias/Jquery/js/jquery.min.js"></script>
+    <script src="/Librerias/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Librerias/SweetAlert/js/sweetAlert2.min.js"></script>
+    <script src="/Escrituras/Constante.js"></script>
+    <script src="/Escrituras/Felix.js"></script>
+    <script src="/Escrituras/Publico/Loguear.js"></script>
+</head>
+<body class="h-100 fondo-inicio-sesion">
+    <div class="container h-100">
+        <div class="row align-items-center h-100">
+            <div class="inicio-sesion col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                <img class="img-fluid" src="/Recursos/Imagenes/LOGO_INICIO_SESION_PEQUENIO_1.png" alt="" />
+                <form>
+                    <div class="form-group">
+                        <label id="lblUsuario" class="notificacion">*</label><i class="material-icons">account_box</i><label for="txtUsuario">Usuario:</label>
+                        <input type="text" id="txtUsuario" class="form-control" maxlength="20" placeholder="Ingrese Usuario de Sesión">
+                    </div>
+                    <div class="form-group">
+                        <label id="lblClave" class="notificacion">*</label><i class="material-icons">vpn_key</i><label for="txtClave">Clave:</label>
+                        <input type="password" id="txtClave" class="form-control" maxlength="20" placeholder="Ingrese Clave">
+                    </div>
+                    <div class="form-group">
+                        <label id="lblToken" class="notificacion">*</label><i class="material-icons">vpn_key</i><label for="txtToken">Código Token:</label>
+                        <input type="text" id="txtToken" class="form-control" maxlength="50" placeholder="Ingrese Token">
+                    </div>
+                    <div class="form-group d-flex justify-content-between align-items-center">
+                        <button type="button" id="btnSolicitar" class="btn btn-outline-primary">Solicitar Código Token</button>
+                        <a href="/Publico/Recuperar" class="alert-link">¿Olvidó su clave?</a>
+                    </div>
+                    <div class="form-group d-flex justify-content-center">
+                        <button type="button" id="btnLoguear" class="btn btn-outline-primary">Iniciar Sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

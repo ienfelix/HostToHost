@@ -1,0 +1,19 @@
+
+@{
+    Layout = "/Views/Shared/_LayoutSideBar.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Órdenes Bancarias Liberadas</title>
+    <script src="/Escrituras/Tesoreria/ListarOrdenesBancariasLiberadas.js"></script>
+</head>
+<body>
+    <h2>Lista Órdenes Bancarias Liberadas</h2>
+    @await Html.PartialAsync("_BandejaOrdenBancaria")
+    @await Html.PartialAsync("_PaginadoOrdenBancaria")
+</body>
+</html>

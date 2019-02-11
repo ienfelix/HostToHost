@@ -1,0 +1,39 @@
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lista Usuarios</title>
+    <script src="/Escrituras/Rol/Listar.js"></script>
+</head>
+<body>
+    <h2>Lista Usuarios</h2>
+    <form>
+        <div class="form-row align-items-end">
+            <div class="col-auto ml-auto mb-2">
+                <label id="lblUsuario" class="notificacion">*</label><i class="material-icons">keyboard</i><label for="txtUsuario">Usuario:</label>
+                <input type="text" id="txtUsuario" class="form-control" maxlength="20" placeholder="Usuario" />
+            </div>
+            <div class="col-auto mb-2">
+                <label id="lblApePaterno" class="notificacion">*</label><i class="material-icons">keyboard</i><label for="txtApePaterno">Ape. Paterno:</label>
+                <input type="text" id="txtApePaterno" class="form-control" />
+            </div>
+            <div class="col-auto mb-2">
+                <label id="lblNombres" class="notificacion">*</label><i class="material-icons">keyboard</i><label for="txtNombres">Nombres:</label>
+                <input type="text" id="txtNombres" class="form-control" />
+            </div>
+            <div class="col-auto mb-2">
+                <button type="button" id="btnBuscar" class="btn btn-outline-dark" title="Buscar Usuarios"><i class="material-icons md-18">search</i></button>
+                <button type="button" id="btnLimpiar" class="btn btn-outline-dark" title="Limpiar Búsqueda"><i class="material-icons md-18">clear</i></button>
+            </div>
+        </div>
+    </form>
+    <div id="dvUsuario" class="table-responsive"></div>
+    @await Html.PartialAsync("_PaginadoOrdenBancaria")
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Inactivar Usuario</title>
+    <script src="/Escrituras/Cuenta/Inactivar.js"></script>
+</head>
+<body>
+    <h2>Inactivar Usuario</h2>
+    <form>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">dns</i><label for="txtIdUsuario">Id Usuario:</label>
+                <input type="text" id="txtIdUsuario" class="form-control" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">account_box</i><label for="txtUsuario">Usuario:</label>
+                <input type="text" id="txtUsuario" class="form-control progreso" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">person</i><label for="txtApePaterno">Apellido Paterno:</label>
+                <input type="text" id="txtApePaterno" class="form-control progreso" readonly />
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">person</i><label for="txtApeMaterno">Apellido Materno:</label>
+                <input type="text" id="txtApeMaterno" class="form-control progreso" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">person</i><label for="txtNombres">Nombres:</label>
+                <input type="text" id="txtNombres" class="form-control progreso" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-10 col-md-10 col-lg-8 form-group">
+                <i class="material-icons">mail</i><label for="txtCorreo">Correo:</label>
+                <input type="text" id="txtCorreo" class="form-control progreso" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">smartphone</i><label for="txtCelular">Celular:</label>
+                <input type="text" id="txtCelular" class="form-control progreso" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">info</i><label for="txtEstado">Estado:</label>
+                <input type="text" id="txtEstado" class="form-control progreso" readonly />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">date_range</i><label for="txtUsuarioCreacion">Usuario Creación:</label>
+                <input type="text" id="txtUsuarioCreacion" class="form-control progreso" readonly />
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 col-lg-4 form-group">
+                <i class="material-icons">date_range</i><label for="txtFechaCreacion">Fecha Creación:</label>
+                <input type="text" id="txtFechaCreacion" class="form-control progreso" readonly />
+            </div>
+        </div>
+        <button id="btnInactivar" type="button" class="btn btn-outline-primary">Inactivar</button>
+        <a href="/Cuenta/Listar" class="btn btn-outline-secondary">Cancelar</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+@{
+    Layout = "/Views/Shared/_LayoutSideBar.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Órdenes Bancarias Diarias</title>
+    <script src="/Escrituras/Tesoreria/ListarOrdenesBancariasDiarias.js"></script>
+</head>
+<body>
+    <h2>Lista Órdenes Bancarias Diarias</h2>
+    @await Html.PartialAsync("_BandejaOrdenBancaria")
+    @await Html.PartialAsync("_PaginadoOrdenBancaria")
+</body>
+</html>

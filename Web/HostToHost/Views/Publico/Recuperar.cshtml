@@ -1,0 +1,45 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html class="h-100">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Recuperar Clave</title>
+    <link rel="stylesheet" href="/Estilos/site.css" />
+    <link rel="stylesheet" href="/Librerias/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="/Librerias/MaterialIcons/css/materialIcons.css" />
+    <link rel="stylesheet" href="/Librerias/SweetAlert/css/sweetAlert2.css" />
+    <script src="/Librerias/Jquery/js/jquery.min.js"></script>
+    <script src="/Librerias/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Librerias/SweetAlert/js/sweetAlert2.min.js"></script>
+    <script src="/Escrituras/Constante.js"></script>
+    <script src="/Escrituras/Felix.js"></script>
+    <script src="/Escrituras/Publico/Recuperar.js"></script>
+</head>
+<body class="h-100">
+    <div class="container h-100">
+        <h6>Ingrese usuario de sesión o correo institucional.</h6>
+        <div class="row align-items-center h-100">
+            <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                <div class="form-group">
+                    <label id="lblUsuario" class="notificacion">*</label><i class="material-icons">person</i><label for="txtUsuario">Usuario:</label>
+                    <input type="text" id="txtUsuario" class="form-control progreso" maxlength="20" placeholder="Usuario de Sesión" />
+                </div>
+                <div class="form-group">
+                    <label id="lblCorreo" class="notificacion">*</label><i class="material-icons">mail</i><label for="txtCorreo">Correo:</label>
+                    <input type="text" id="txtCorreo" class="form-control progreso" maxlength="50" placeholder="Correo" />
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                    <button id="btnRecuperar" type="button" class="btn btn-outline-primary">Recuperar Clave</button>
+                    <a href="/Publico/Loguear" class="btn btn-outline-secondary">Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @await Html.PartialAsync("_Progreso")
+</body>
+</html>

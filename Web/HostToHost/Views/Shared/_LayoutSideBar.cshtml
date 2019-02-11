@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Estilos/site.css" />
+    <link rel="stylesheet" href="/Estilos/SideBar.css" />
+    <link rel="stylesheet" href="/Librerias/Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="/Librerias/SweetAlert/css/sweetAlert2.css" />
+    <link rel="stylesheet" href="/Librerias/MaterialIcons/css/materialIcons.css" />
+    <script src="/Librerias/Jquery/js/jquery.min.js"></script>
+    <script src="/Librerias/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Librerias/SweetAlert/js/sweetAlert2.min.js"></script>
+    <script src="/Escrituras/Constante.js"></script>
+    <script src="/Escrituras/Felix.js"></script>
+    <script src="/Escrituras/Layout.js"></script>
+</head>
+<body>
+    @await Html.PartialAsync("_NavBar")
+    <div id="wrapper">
+        @await Html.PartialAsync("_SideBar")
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

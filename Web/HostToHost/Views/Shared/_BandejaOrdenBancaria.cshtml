@@ -1,0 +1,31 @@
+
+<form>
+    <div class="form-row align-items-end">
+        <div class="col-auto mr-auto mb-2">
+            <button type="button" id="btnAprobar" class="btn btn-outline-dark" title="Aprobar Masivamente">Aprobar M.</button>
+        </div>
+        <div class="col-auto mb-2">
+            <a href="#menu-toggle" class="btn btn-outline-dark" id="menu-toggle" title="Filtros"><i class="material-icons md-18">list</i> Filtros</a>
+        </div>
+        <div class="col-auto mb-2">
+            <button type="button" id="btnExportar" class="btn btn-outline-dark"><i class="material-icons md-18">cloud_download</i> Exportar Excel</button>
+        </div>
+        <div class="col-auto mb-2">
+            <label id="lblIdSap" class="notificacion">*</label><i class="material-icons">keyboard</i><label for="txtIdSap">Id Sap:</label>
+            <input type="text" id="txtIdSap" class="form-control" maxlength="10" placeholder="Id Sap" />
+        </div>
+        <div class="col-auto mb-2">
+            <label id="lblFechaInicio" class="notificacion">*</label><i class="material-icons">date_range</i><label for="txtFechaInicio">Fecha Inicio:</label>
+            <input type="date" id="txtFechaInicio" class="form-control" />
+        </div>
+        <div class="col-auto mb-2">
+            <label id="lblFechaFin" class="notificacion">*</label><i class="material-icons">date_range</i><label for="txtFechaFin">Fecha Fin:</label>
+            <input type="date" id="txtFechaFin" class="form-control" />
+        </div>
+        <div class="col-auto mb-2">
+            <button type="button" id="btnBuscar" class="btn btn-outline-dark" title="Buscar Órdenes"><i class="material-icons md-18">search</i></button>
+            <button type="button" id="btnLimpiar" class="btn btn-outline-dark" title="Limpiar Búsqueda"><i class="material-icons md-18">clear</i></button>
+        </div>
+    </div>
+</form>
+<div id="dvOrdenBancaria" class="table-responsive"></div>
